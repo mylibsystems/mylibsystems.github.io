@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+set -eu
+
+if [ -x .venv/bin/cz ]; then
+  CZ=.venv/bin/cz
+elif command -v cz >/dev/null 2>&1; then
+  CZ=cz
+else
+  echo "commit-msg hook: commitizen (cz) not found in PATH."
+  echo "Install dev tools with: make setup"
+  exit 1
+fi
+
+"$CZ" check --commit-msg-file "$1"

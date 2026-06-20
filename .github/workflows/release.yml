@@ -1,0 +1,76 @@
+name: Release on Default Branch
+
+on:
+  push:
+    branches:
+      - '**'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+
+      - name: Verify
+        run: make verify
+
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Bump version, tag, changelog
+        id: bump
+        shell: bash
+        run: |
+          set +e
+          cz bump --yes --changelog
+          exit_code=$?
+          set -e
+
+          if [ "$exit_code" -eq 0 ]; then
+            echo "bumped=true" >> "$GITHUB_OUTPUT"
+          elif [ "$exit_code" -eq 21 ]; then
+            echo "No version bump needed."
+            echo "bumped=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          else
+            echo "Commitizen bump failed with code $exit_code"
+            exit "$exit_code"
+          fi
+
+      - name: Push bump commit and tags
+        if: steps.bump.outputs.bumped == 'true'
+        run: |
+          git push origin main
+          git push origin --tags
+
+      - name: Capture released tag
+        if: steps.bump.outputs.bumped == 'true'
+        id: tag
+        run: echo "tag=$(git describe --tags --abbrev=0)" >> "$GITHUB_OUTPUT"
+
+      - name: Create GitHub release
+        if: steps.bump.outputs.bumped == 'true'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.tag.outputs.tag }}
+          generate_release_notes: true

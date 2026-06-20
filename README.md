@@ -47,6 +47,40 @@ Deployment is automatic through GitHub Pages from:
 
 Any commit pushed to main updates the published site.
 
+## Branch Verification and Releases
+
+This repository is configured with two GitHub Actions workflows:
+
+- Verify Branch: runs on every push to any branch and executes `make verify`
+- Release on Default Branch: runs on push, but only performs release logic when the push target is the repository default branch
+
+Release behavior:
+
+- Uses Commitizen with Conventional Commits rules
+- Calculates next semantic version from commit history
+- Creates bump commit, tag, and changelog updates
+- Creates a GitHub Release from the generated tag
+- If no version bump is needed, workflow exits without additional actions
+
+## Commit Convention Enforcement (Local)
+
+Local commit messages are enforced via git hook:
+
+- Hook path: `.githooks/commit-msg`
+- Rule engine: Commitizen (`cz check --commit-msg-file`)
+
+Install local tooling and hooks:
+
+- `make setup`
+
+## Makefile Commands
+
+- `make setup`: install dev dependencies and configure git hooks
+- `make install-hooks`: configure `.githooks` as active hooks path
+- `make verify`: run all local verification checks
+- `make commit-check MSG='feat: your message'`: validate a commit message format
+- `make release-dry-run`: preview next version bump without changing files
+
 ## Domain and DNS
 
 Custom domain configured:
