@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 281 610" role="img" aria-label="Circuit artwork" preserveAspectRatio="xMidYMid meet">
+  <rect width="281" height="610" fill="#1a1a2e" opacity="0.3"/>
   <defs>
 <g id="circuit-base" transform="translate(0.000000,610.000000) scale(0.100000,-0.100000)"
 fill="currentColor" stroke="none">
