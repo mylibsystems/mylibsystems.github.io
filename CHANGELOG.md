@@ -1,3 +1,9 @@
+## v0.7.0 (2026-06-21)
+
+### Feat
+
+- replace about circuit raster with inline vector drawing
+
 ## v0.6.0 (2026-06-21)
 
 ### Feat
