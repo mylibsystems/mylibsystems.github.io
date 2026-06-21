@@ -1,3 +1,9 @@
+## v0.9.1 (2026-06-21)
+
+### Fix
+
+- correct mobile circuit art placement and prevent right crop
+
 ## v0.9.0 (2026-06-21)
 
 ### Feat
