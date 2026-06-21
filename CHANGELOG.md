@@ -1,3 +1,9 @@
+## v0.9.11 (2026-06-21)
+
+### Fix
+
+- keep founder below fold and fit hero to browser window
+
 ## v0.9.10 (2026-06-21)
 
 ### Fix
