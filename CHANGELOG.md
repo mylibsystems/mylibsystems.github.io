@@ -1,3 +1,9 @@
+## v0.9.18 (2026-06-21)
+
+### Fix
+
+- expand hero highlight labels
+
 ## v0.9.17 (2026-06-21)
 
 ### Fix
