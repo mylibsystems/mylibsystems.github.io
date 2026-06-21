@@ -505,17 +505,16 @@
         border-radius: 0;
         opacity: 0.22;
         pointer-events: none;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .circuit-svg {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
         width: min(70vw, 320px);
         max-width: 100%;
         margin: 0;
+        display: block;
       }
 
       .hero-layout {
