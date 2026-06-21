@@ -1,3 +1,9 @@
+## v0.6.0 (2026-06-21)
+
+### Feat
+
+- rebuild about island from keynote page one
+
 ## v0.5.0 (2026-06-21)
 
 ### Feat
