@@ -132,14 +132,19 @@
       border: 1px solid var(--surface-border);
       background: var(--surface);
       border-radius: var(--radius-lg);
-      padding: clamp(24px, 5vw, 48px);
+      padding: clamp(34px, 6vw, 64px);
       box-shadow: var(--shadow);
       display: grid;
-      align-content: center;
-      gap: 20px;
+      align-content: stretch;
+      justify-items: start;
+      gap: clamp(24px, 3.4vh, 42px);
       overflow: hidden;
       position: relative;
-      min-height: 72vh;
+      min-height: calc(100svh - 120px);
+    }
+
+    .hero > * {
+      margin: 0;
     }
 
     .hero::after {
@@ -194,21 +199,36 @@
     }
 
     .highlights {
-      margin: 4px 0 0;
+      margin: 0;
       padding: 0;
       list-style: none;
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 14px;
+      align-self: end;
     }
 
     .highlights li {
       border: 1px solid var(--line);
       border-radius: 999px;
-      padding: 8px 12px;
-      font-size: 13px;
+      padding: 10px 15px;
+      font-size: 14px;
       color: #d7e3f5;
       background: rgba(255, 255, 255, 0.04);
+    }
+
+    .hero-fill {
+      min-height: 100%;
+      display: grid;
+      align-content: stretch;
+      grid-template-rows: 1fr auto;
+      gap: clamp(24px, 3.2vh, 40px);
+    }
+
+    .hero-head {
+      display: grid;
+      align-content: start;
+      gap: clamp(18px, 2.6vh, 30px);
     }
 
     .section {
@@ -389,6 +409,12 @@
 
       .hero {
         padding: 22px;
+        min-height: calc(100svh - 96px);
+      }
+
+      .hero-fill {
+        gap: 18px;
+        grid-template-rows: auto;
       }
 
       h1 {
@@ -421,18 +447,22 @@
     </header>
 
     <section class="hero" id="about" aria-labelledby="company-title">
-      <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Design Studio and IT Consulting</span>
-      <h1 id="company-title">High quality engineering, powered by automation and AI.</h1>
-      <p class="subtitle">
-        MylibSystems helps teams design and build reliable digital products with strong engineering standards,
-        automation-first delivery, and practical AI integration.
-      </p>
-      <ul class="highlights" aria-label="Core focus areas">
-        <li>Engineering standards and architecture</li>
-        <li>Automation and delivery excellence</li>
-        <li>AI-enabled technology stacks</li>
-        <li>Product and platform consulting</li>
-      </ul>
+      <div class="hero-fill">
+        <div class="hero-head">
+          <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Design Studio and IT Consulting</span>
+          <h1 id="company-title">High quality engineering, powered by automation and AI.</h1>
+          <p class="subtitle">
+            MylibSystems helps teams design and build reliable digital products with strong engineering standards,
+            automation-first delivery, and practical AI integration.
+          </p>
+        </div>
+        <ul class="highlights" aria-label="Core focus areas">
+          <li>Engineering standards and architecture</li>
+          <li>Automation and delivery excellence</li>
+          <li>AI-enabled technology stacks</li>
+          <li>Product and platform consulting</li>
+        </ul>
+      </div>
     </section>
 
     <section class="section" id="founder" aria-labelledby="founder-title">
