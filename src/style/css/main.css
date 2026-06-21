@@ -20,13 +20,18 @@ div.video {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    background: linear-gradient(45deg, #1e0230, #623f7d);
+    background:
+        radial-gradient(1100px 700px at 15% 10%, #27466b 0%, transparent 60%),
+        radial-gradient(900px 600px at 85% 90%, #163b49 0%, transparent 65%),
+        linear-gradient(150deg, #0b1220, #1a2e4a);
     z-index:-1;
 }
 
 div.video img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
 }
 
 a {
@@ -96,6 +101,10 @@ header {
     height: 100%;
     color: black;
     background-repeat: no-repeat;
+}
+
+header#home {
+    color: #e9f0fb;
 }
 
 /* TAGS */
@@ -293,6 +302,15 @@ nav.topnav div.logo {
 
 nav.topnav div.logo>span {
     color: rgb(170, 170, 170);
+}
+
+nav.topnav:not(.white-header) a,
+nav.topnav:not(.white-header) div.logo {
+    color: #e9f0fb;
+}
+
+nav.topnav:not(.white-header) div.logo > span {
+    color: #9eb1cc;
 }
 
 nav.topnav a.primary,
