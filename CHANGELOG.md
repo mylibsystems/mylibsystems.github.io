@@ -1,3 +1,9 @@
+## v0.9.2 (2026-06-21)
+
+### Fix
+
+- prevent mobile top crop of circuit SVG
+
 ## v0.9.1 (2026-06-21)
 
 ### Fix
