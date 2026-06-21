@@ -160,9 +160,10 @@
       min-height: 100%;
       width: 100%;
       display: grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+      grid-template-columns: 1fr;
       gap: clamp(18px, 3vw, 42px);
       align-items: stretch;
+      position: relative;
     }
 
     .hero-copy {
@@ -171,6 +172,7 @@
       grid-template-rows: auto auto 1fr auto;
       gap: clamp(16px, 2.4vh, 30px);
       align-content: stretch;
+      padding-right: clamp(220px, 30vw, 430px);
     }
 
     .eyebrow {
@@ -256,25 +258,29 @@
     }
 
     .hero-art {
-      position: relative;
+      position: absolute;
+      inset: 0 0 0 auto;
+      width: clamp(220px, 30vw, 430px);
       border: 0;
       border-radius: 0;
       overflow: hidden;
       background: transparent;
-      min-height: 100%;
+      min-height: 0;
       display: grid;
       align-content: center;
       justify-content: end;
+      pointer-events: none;
     }
 
     .circuit-svg {
-      width: min(100%, 430px);
+      width: 100%;
+      max-width: 430px;
       height: auto;
       display: block;
       opacity: 1;
       mix-blend-mode: normal;
       overflow: visible;
-      margin-right: -26px;
+      margin-right: 0;
       margin-top: 6px;
     }
 
@@ -426,13 +432,14 @@
         grid-template-columns: 1fr;
       }
 
-      .hero-art {
-        min-height: 170px;
+      .hero-copy {
+        padding-right: clamp(180px, 34vw, 300px);
       }
 
       .circuit-svg {
-        width: clamp(350px, 64vw, 450px);
-        margin-right: -30px;
+        width: 100%;
+        max-width: 300px;
+        margin-right: 0;
         margin-top: 8px;
       }
 
@@ -480,6 +487,7 @@
 
       .hero-copy {
         grid-template-rows: auto;
+        padding-right: 0;
       }
 
       .highlights {
