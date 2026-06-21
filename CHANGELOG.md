@@ -1,3 +1,9 @@
+## v0.4.0 (2026-06-21)
+
+### Feat
+
+- redesign website as single-page studio profile
+
 ## v0.3.1 (2026-06-21)
 
 ### Fix
