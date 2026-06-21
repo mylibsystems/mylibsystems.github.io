@@ -1,3 +1,9 @@
+## v0.9.3 (2026-06-21)
+
+### Fix
+
+- center overlapped circuit art on mobile
+
 ## v0.9.2 (2026-06-21)
 
 ### Fix
