@@ -1,3 +1,9 @@
+## v0.8.4 (2026-06-21)
+
+### Fix
+
+- keep hero vector on right without affecting frame height
+
 ## v0.8.3 (2026-06-21)
 
 ### Fix
