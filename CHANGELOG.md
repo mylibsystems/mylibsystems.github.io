@@ -1,3 +1,9 @@
+## v0.8.1 (2026-06-21)
+
+### Fix
+
+- align vector circuit to original traced shape
+
 ## v0.8.0 (2026-06-21)
 
 ### Feat
