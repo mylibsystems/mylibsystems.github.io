@@ -263,16 +263,37 @@
       background: transparent;
       min-height: 100%;
       display: grid;
-      align-content: end;
+      align-content: center;
       justify-content: end;
     }
 
-    .hero-art img {
-      width: min(100%, 390px);
+    .circuit-svg {
+      width: min(100%, 430px);
       height: auto;
       display: block;
-      opacity: 0.88;
+      opacity: 0.9;
       mix-blend-mode: lighten;
+      overflow: visible;
+      margin-right: -26px;
+      margin-top: 6px;
+    }
+
+    .circuit-svg .trace {
+      fill: none;
+      stroke: #66d5f4;
+      stroke-width: 3.1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .circuit-svg .node {
+      fill: #66d5f4;
+    }
+
+    .circuit-svg .side {
+      transform-box: fill-box;
+      transform-origin: center;
+      transform: scaleY(1.14);
     }
 
     .section {
@@ -427,6 +448,12 @@
         min-height: 170px;
       }
 
+      .circuit-svg {
+        width: clamp(350px, 64vw, 450px);
+        margin-right: -30px;
+        margin-top: 8px;
+      }
+
       .portrait-wrap {
         width: min(240px, 60vw);
       }
@@ -486,6 +513,12 @@
         pointer-events: none;
       }
 
+      .circuit-svg {
+        width: 84vw;
+        margin-right: -18vw;
+        margin-top: 2vw;
+      }
+
       .hero-layout {
         position: relative;
       }
@@ -537,7 +570,71 @@
           </ul>
         </div>
         <figure class="hero-art" aria-hidden="true">
-          <img src="src/img/about/page1-circuit-transparent.png" alt="">
+          <svg class="circuit-svg" viewBox="0 0 390 560" xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true" focusable="false">
+            <g class="side side-left">
+              <path class="trace" d="M68 10V210L30 248V548"/>
+              <path class="trace" d="M78 10V220L40 258V548"/>
+              <path class="trace" d="M88 10V230L50 268V548"/>
+              <path class="trace" d="M98 10V240L60 278V548"/>
+              <path class="trace" d="M108 10V250L70 288V548"/>
+              <path class="trace" d="M118 12V258L80 298V548"/>
+
+              <path class="trace" d="M62 270H22V304"/>
+              <path class="trace" d="M74 286H30V338"/>
+              <path class="trace" d="M86 304H44V386"/>
+              <path class="trace" d="M98 318H58V432"/>
+              <path class="trace" d="M110 334H82V466"/>
+              <path class="trace" d="M120 246H148V202"/>
+
+              <circle class="node" cx="22" cy="304" r="4.7"/>
+              <circle class="node" cx="30" cy="338" r="4.7"/>
+              <circle class="node" cx="44" cy="386" r="4.7"/>
+              <circle class="node" cx="58" cy="432" r="4.7"/>
+              <circle class="node" cx="82" cy="466" r="4.7"/>
+              <circle class="node" cx="148" cy="202" r="4.7"/>
+            </g>
+
+            <g class="center">
+              <path class="trace" d="M188 178V258L168 278V558"/>
+              <path class="trace" d="M198 170V268L178 288V558"/>
+              <path class="trace" d="M208 178V278L188 298V558"/>
+              <path class="trace" d="M218 190V288L198 308V558"/>
+              <path class="trace" d="M228 202V300L208 320V558"/>
+              <path class="trace" d="M238 214V312L218 332V558"/>
+
+              <path class="trace" d="M188 258H158V328"/>
+              <path class="trace" d="M198 268H170V360"/>
+              <path class="trace" d="M208 290H184V398"/>
+              <path class="trace" d="M218 308H248V266"/>
+              <path class="trace" d="M228 328H262V292"/>
+
+              <circle class="node" cx="158" cy="328" r="4.7"/>
+              <circle class="node" cx="170" cy="360" r="4.7"/>
+              <circle class="node" cx="184" cy="398" r="4.7"/>
+              <circle class="node" cx="248" cy="266" r="4.7"/>
+              <circle class="node" cx="262" cy="292" r="4.7"/>
+            </g>
+
+            <g class="side side-right">
+              <path class="trace" d="M280 302V392L252 420V558"/>
+              <path class="trace" d="M290 292V402L262 430V558"/>
+              <path class="trace" d="M300 284V412L272 440V558"/>
+              <path class="trace" d="M310 276V422L282 450V558"/>
+              <path class="trace" d="M320 268V432L292 460V558"/>
+
+              <path class="trace" d="M282 378H316V344"/>
+              <path class="trace" d="M292 400H330V366"/>
+              <path class="trace" d="M302 420H344V388"/>
+              <path class="trace" d="M312 440H358V408"/>
+              <path class="trace" d="M272 456H232V500"/>
+
+              <circle class="node" cx="316" cy="344" r="4.7"/>
+              <circle class="node" cx="330" cy="366" r="4.7"/>
+              <circle class="node" cx="344" cy="388" r="4.7"/>
+              <circle class="node" cx="358" cy="408" r="4.7"/>
+              <circle class="node" cx="232" cy="500" r="4.7"/>
+            </g>
+          </svg>
         </figure>
       </div>
     </section>
