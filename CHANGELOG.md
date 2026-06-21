@@ -1,3 +1,9 @@
+## v0.9.5 (2026-06-21)
+
+### Fix
+
+- use flexbox for reliable mobile center alignment
+
 ## v0.9.4 (2026-06-21)
 
 ### Fix
