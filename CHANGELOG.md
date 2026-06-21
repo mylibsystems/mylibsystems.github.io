@@ -1,3 +1,9 @@
+## v0.9.9 (2026-06-21)
+
+### Fix
+
+- remove debug background and hide circuit svg on mobile
+
 ## v0.9.8 (2026-06-21)
 
 ### Fix
