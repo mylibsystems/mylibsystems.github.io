@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 281 610" role="img" aria-label="Circuit artwork" preserveAspectRatio="xMidYMid meet">
   <rect width="281" height="610" fill="red" opacity="0.5"/>
   <defs>
-<g id="circuit-base" transform="translate(0.000000,610.000000) scale(0.100000,-0.100000)"
+<g id="circuit-base" transform="translate(0.000000,610.000000) scale(0.100000,-0.100000) translate(40,0)"
 fill="currentColor" stroke="none">
 <path d="M810 4987 l0 -932 -218 -218 c-176 -176 -222 -217 -244 -217 -21 0
 -29 -6 -34 -24 -7 -29 -1 -42 26 -56 15 -8 24 -6 40 10 12 12 19 28 16 38 -4
