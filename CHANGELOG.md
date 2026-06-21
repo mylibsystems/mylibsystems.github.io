@@ -1,3 +1,9 @@
+## v0.9.21 (2026-06-21)
+
+### Fix
+
+- normalize section gaps to 24px
+
 ## v0.9.20 (2026-06-21)
 
 ### Fix
