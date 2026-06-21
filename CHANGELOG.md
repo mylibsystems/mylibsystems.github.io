@@ -1,3 +1,9 @@
+## v0.9.17 (2026-06-21)
+
+### Fix
+
+- increase subtitle to note spacing
+
 ## v0.9.16 (2026-06-21)
 
 ### Fix
