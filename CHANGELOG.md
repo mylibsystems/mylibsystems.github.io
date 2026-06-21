@@ -1,3 +1,9 @@
+## v0.8.3 (2026-06-21)
+
+### Fix
+
+- clamp hero frame sizing for large Safari screens
+
 ## v0.8.2 (2026-06-21)
 
 ### Fix
