@@ -140,7 +140,7 @@
       gap: clamp(24px, 3.4vh, 42px);
       overflow: hidden;
       position: relative;
-      min-height: calc(100svh - 120px);
+      min-height: clamp(520px, calc(100vh - 120px), 860px);
       isolation: isolate;
     }
 
@@ -470,7 +470,7 @@
 
       .hero {
         padding: 22px;
-        min-height: calc(100svh - 96px);
+        min-height: min(680px, calc(100vh - 96px));
       }
 
       .hero-fill {
@@ -638,7 +638,12 @@
         if (!hero) return;
         var heroTop = hero.getBoundingClientRect().top;
         var reserved = Math.max(0, Math.round(heroTop) + 12);
-        hero.style.minHeight = "calc(100svh - " + reserved + "px)";
+        var viewportHeight = Math.max(0, window.innerHeight || document.documentElement.clientHeight || 0);
+        var computedHeight = viewportHeight - reserved;
+        var minHero = window.matchMedia("(max-width: 700px)").matches ? 420 : 520;
+        var maxHero = window.matchMedia("(max-width: 700px)").matches ? 680 : 860;
+        var safeHeight = Math.max(minHero, Math.min(maxHero, computedHeight));
+        hero.style.minHeight = safeHeight + "px";
       }
 
       function applyLayout(layout, persist) {
