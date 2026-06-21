@@ -500,17 +500,21 @@
 
       .hero-art {
         position: absolute;
-        inset: 0;
+        inset: auto 0 0 0;
+        height: 48%;
         border: 0;
         border-radius: 0;
         opacity: 0.22;
         pointer-events: none;
+        align-content: end;
+        justify-content: end;
       }
 
       .circuit-svg {
-        width: 84vw;
-        margin-right: -18vw;
-        margin-top: 2vw;
+        width: min(66vw, 300px);
+        max-width: 100%;
+        margin-right: 2vw;
+        margin-top: 0;
       }
 
       .hero-layout {
