@@ -1,3 +1,9 @@
+## v0.5.0 (2026-06-21)
+
+### Feat
+
+- improve responsive layout and add width mode toggle
+
 ## v0.4.0 (2026-06-21)
 
 ### Feat
