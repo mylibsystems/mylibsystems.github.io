@@ -1,3 +1,9 @@
+## v0.8.0 (2026-06-21)
+
+### Feat
+
+- use traced vector circuit with side-only stretch
+
 ## v0.7.0 (2026-06-21)
 
 ### Feat
