@@ -1,3 +1,9 @@
+## v0.9.14 (2026-06-21)
+
+### Fix
+
+- tighten desktop section rhythm
+
 ## v0.9.13 (2026-06-21)
 
 ### Fix
