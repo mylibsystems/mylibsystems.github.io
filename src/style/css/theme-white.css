@@ -1,0 +1,23 @@
+header div.title>h1 {
+    color: white;
+}
+
+nav.topnav a, header a {
+    color: white;
+}
+
+nav.topnav div.logo {
+    color: white;
+}
+
+nav.topnav.white-header a {
+    color: black;
+}
+
+nav.topnav.white-header a.primary {
+    color: white;
+}
+
+nav.topnav.white-header div.logo {
+    color: black;
+}

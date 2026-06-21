@@ -15,7 +15,7 @@ This project is a clean, static website hosted with GitHub Pages and mapped to t
 
 This repository powers the organization website for MyLib Systems and currently includes:
 
-- Under-construction landing page
+- Full static company website (home, portfolio, project pages)
 - Custom domain setup via CNAME
 - GitHub Pages deployment from the main branch
 
@@ -97,9 +97,9 @@ Required DNS records at the registrar:
 
 ## Project Goals
 
-- Maintain a fast, minimal company landing page
+- Maintain a fast, fully static company website
 - Keep hosting fully serverless and cost-efficient
-- Expand into a richer corporate web presence over time
+- Preserve feature parity with the legacy website without backend dependencies
 
 ## License
 

@@ -1,135 +1,588 @@
-<!doctype html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyLib Systems | Under Construction</title>
-  <meta name="description" content="MyLib Systems website is under construction.">
-  <style>
-    :root {
-      --bg-1: #0b1220;
-      --bg-2: #1a2e4a;
-      --accent: #18c29c;
-      --text: #e9f0fb;
-      --muted: #9eb1cc;
-      --card: rgba(8, 18, 34, 0.68);
-      --ring: rgba(24, 194, 156, 0.35);
-    }
+    <title>MyLib Systems LLC / Software Development Company</title>
+    <!--TODO: remove. Used for icons -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1">
 
-    * {
-      box-sizing: border-box;
-    }
 
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      color: var(--text);
-    }
+            <script src="./src/js/slider.js"></script>
+    <script src="./src/js/burger.js"></script>
+    <script src="./src/js/header.js"></script>
+    <script src="./src/js/accordion.js"></script>
+    <link rel="stylesheet" href="./src/style/css/font-SpaceGrotesk.css">
+    <link rel="stylesheet" href="./src/style/css/font.css">
+    <link rel="stylesheet" href="./src/style/css/main.css">
+    <link rel="stylesheet" href="./src/style/css/theme-white.css">
+    <link rel="stylesheet" href="./src/style/css/validation.css">
 
-    body {
-      background:
-        radial-gradient(1100px 700px at 15% 10%, #27466b 0%, transparent 60%),
-        radial-gradient(900px 600px at 85% 90%, #163b49 0%, transparent 65%),
-        linear-gradient(150deg, var(--bg-1), var(--bg-2));
-      display: grid;
-      place-items: center;
-      padding: 24px;
-    }
+    <link rel="shortcut icon" type="image/png" href="./src/img/favico.png" />
 
-    .panel {
-      width: min(760px, 100%);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      border-radius: 18px;
-      padding: 28px;
-      background: var(--card);
-      backdrop-filter: blur(8px);
-      box-shadow: 0 18px 48px rgba(0, 0, 0, 0.36);
-      animation: reveal 700ms ease-out both;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 6px 12px;
-      border: 1px solid rgba(24, 194, 156, 0.45);
-      border-radius: 999px;
-      color: var(--accent);
-      font-size: 13px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      background: rgba(24, 194, 156, 0.08);
-    }
-
-    .dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 0 0 var(--ring);
-      animation: pulse 2s infinite;
-    }
-
-    h1 {
-      margin: 18px 0 10px;
-      font-size: clamp(28px, 5vw, 44px);
-      line-height: 1.1;
-      letter-spacing: 0.01em;
-    }
-
-    p {
-      margin: 0;
-      font-size: clamp(16px, 2.4vw, 20px);
-      color: var(--muted);
-      max-width: 58ch;
-      line-height: 1.6;
-    }
-
-    .brand {
-      margin-top: 22px;
-      font-size: 14px;
-      color: #c4d3e8;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-
-    @keyframes pulse {
-      0% {
-        box-shadow: 0 0 0 0 var(--ring);
-      }
-      70% {
-        box-shadow: 0 0 0 12px rgba(24, 194, 156, 0);
-      }
-      100% {
-        box-shadow: 0 0 0 0 rgba(24, 194, 156, 0);
-      }
-    }
-
-    @keyframes reveal {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
 </head>
+
 <body>
-  <main class="panel" aria-label="Under construction notice">
-    <div class="badge">
-      <span class="dot" aria-hidden="true"></span>
-      Under Construction
+
+        <div class="video" id="large-header" style="background: none;background-color: #654388;">
+                
+        </div>
+    <!-- TOP NAVIGATION -->
+    <nav class="topnav" id="myTopnav">
+        <div class="center">
+            <div class="logo">
+                <span class="logo_ico"></span>
+                Mylib<span>Systems</span>
+            </div>
+            <div>
+                <a href="javascript:void(0);" class="icon" onclick="burger()">
+                    <!--i-- class="fa fa-bars"></!--i-->
+                </a>
+                <a href="#home" onclick="burger()">Home</a>
+                <a href="#services" onclick="burger()">Services</a>
+                <a href="#portfolio" onclick="burger()">Porfolio</a>
+                <a href="#about" onclick="burger()">About us</a>
+                <a href="#testimonials" onclick="burger()">Testimonials</a>
+                <a href="#contact" class="primary" onclick="burger()">Contact us</a>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </nav>
+    <!-- END: TOP NAVIGATION -->
+
+    <!-- HEADER -->
+    <header id="home" class="center">
+
+
+        <!-- LOGO -->
+        <div id="title" class="title">
+            <h1>
+                Innovative<br> <span id="title1">Software</span>
+                <br> <span id="title2">Engineering</span>
+            </h1>
+        </div>
+        <!-- END: LOGO -->
+
+    </header>
+    <!-- END: HEADER -->
+
+    <div class="center">
+
+        <!-- SERVICES -->
+        <div id="services" class="block">
+            <div class="left">
+                <div class="scrollable">
+                    <h1>Services</h1>
+                    <span>Our team specialized on creating a complete software cycle. We understand the importance of both the stage of preporation, implementation and support of the project</span>
+                </div>
+            </div>
+            <div class="right">
+                <div class="clear sub"></div>
+                <div class="left sub">
+                    <h3><a href="javascript:void(0);" onclick="expand(this, 'consulting')">IT Consulting</a></h3>
+                </div>
+                <div class="right" id="consulting">We generate progress, not paper. You get results-focused, multidisciplinary teams that prepare you for the future.</div>
+                <div class="clear sub"></div>
+
+                <div class="left sub">
+                    <h3><a href="javascript:void(0);" onclick="expand(this, 'uxdesign')">UX/UI Design</a></h3>
+                </div>
+                <div class="right" id="uxdesign">We rewrite the rules of interaction. From services to objects to digital, you get multimodal experiences designed to fuel growth.</div>
+                <div class="clear sub"></div>
+
+                <div class="left sub">
+                    <h3><a href="javascript:void(0);" onclick="expand(this, 'engineering')">Engineering</a></h3>
+                </div>
+                <div class="right" id="engineering">We make technology transformation happen. You get omnichannel software platforms architected for the future and built to scale.</div>
+                <div class="clear sub"></div>
+
+                <div class="left sub">
+                    <h3><a href="javascript:void(0);" onclick="expand(this, 'operate')">Operate</a></h3>
+                </div>
+                <div class="right sub" id="operate">We deploy commercial software product practices to deliver next-generation integrated & smart-run services.</div>
+                <div class="clear sub"></div>
+
+                <div class="left sub">
+                    <h3><a href="javascript:void(0);" onclick="expand(this, 'optimize')">Optimize</a></h3>
+                </div>
+                <div class="right" id="optimize">Process optimization turned into platforms for innovation through data-driven decisions and a product-centric approach.</div>
+                <div class="clear sub"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- END: SERVICES -->
+
+        <!-- PORTFOLIO -->
+        <div id="portfolio" class="block">
+            <div class="left">
+                <div class="scrollable">
+                    <h1>Portfolio</h1>
+                    <span>We have implemented more than 50 B2B and B2C projects for various fields of business and are proud to present you the result. </span>
+                </div>
+            </div>
+            <div class="right">
+                <div class="clear sub"></div>
+                <ul class="projects">
+                    <li>
+                        <ul class="tags">
+                            <li><a href="#">B2B</a></li>
+                            <li><a href="#">AWS</a></li>
+                            <li><a href="#">KAFKA</a></li>
+                        </ul>
+                        <a href="projects/ticketing-platform-as-a-service.html" style="background-image: url(./src/img/ticketing-platform-as-a-service.png);background-color: #85c0c9;"> 
+                            <span>Ticketing Platform</br>
+                                as a Service</span>
+                        </a>
+                    </li>
+                    <li>
+                        <ul class="tags">
+                            <li><a href="#">DATA SCIENCE</a></li>
+                            <li><a href="#">SCALA</a></li>
+                        </ul>
+                        <a href="projects/family-communication-platform-and-kid-tracking-system.html" style="background-image: url(./src/img/kid.png);background-color: #ecc782;"> 
+                            <span>Family Communication Platform</br>
+                                and Kid Tracking System</span>
+                        </a>
+                    </li>
+                    <li>
+                        <ul class="tags">
+                            <li><a href="#">B2B</a></li>
+                            <li><a href="#">B2C</a></li>
+                            <li><a href="#">MOBILE</a></li>
+                        </ul>
+                        <a href="projects/event-based-advertising-website.html" style="background-image: url(./src/img/countdown.png);background-color: #ec8c82;">
+                            <span>Event Based Advertising</br>Website</span>
+                        </a>
+                    </li>
+                </ul>
+                <br/>
+                <a href="projects.html" class="primary big">See all projects</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- END: PORTFOLIO -->
+
+        <!-- ABOUT -->
+        <div id="about">
+            <div class="left" style="">
+                <div class="">
+                    <h1>About us</h1>
+                    <span>We have implemented more than 50 B2B and B2C projects for various fields of business and are proud to present you the result. </span>
+                </div>
+            </div>
+            <div class="right" style="padding-top: 120px;">
+                <div class="stat projects">
+                    <span>40</span>
+                    <h1>Delivered<br>projects</h1>
+                </div>
+                <div class="stat clients">
+                    <span>15</span>
+                    <h1>Countries<br>with clients</h1>
+                </div>
+                <div class="stat years">
+                    <span>2</span>
+                    <h1>Years averege<br>project duration</h1>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- END: ABOUT -->
     </div>
-    <h1>Our new site is on the way.</h1>
-    <p>
-      MyLib Systems is preparing a new digital experience. We are currently building this website and will launch soon.
-    </p>
-    <div class="brand">MyLib Systems</div>
-  </main>
+
+    <!-- TECH EXP -->
+    <div id="expertise">
+            
+        <div class="table-flex col3-center text-center">
+            <div></div>
+            <div>
+                <h1>Technical expertise</h1>
+                <p>MyLib specialists use up-to-date technologies and latest industry trends to deliver technically complex and yet easy-to-use solutions with the optimal cost/performance ratio. Our expert team has taken part in dozens of application development projects. </p>
+            </div>
+            <div></div>
+        </div>
+            <div class="table-flex expertise" role="table" aria-label="Expertise">
+
+                <div><div><h3>Java</h3><p>Our Java engineers build highly robust solutions based on latest open source technologies</p></div></div>
+                <div><div><h3>Clouds</h3><p>We have expertise in :) AWS and Google Cloud</p></div></div>
+                <div><div><h3>Front End</h3><p>We build state-of-the-art frontend solutions based on HTML5 and the latest JavaScript frameworks</p></div></div>
+                <div><div><h3>Node JS</h3><p>We provide teams of top-notch Node.js developers to help SMBs build reliable software tailored to their goals and needs.</p></div></div>
+                <div><div><h3>Mobile</h3><p>Our developers build high-performing mobile applications for iOS and Android with cutting-edge React Native technologies.</p></div></div>
+                <div><div><h3>ML&AI</h3><p>We engineer tailor-made intelligence automation solutions to help SMBs enhance their products with features powered by Machine Learning and Artificial Intelligence.</p></div></div>
+            </div>
+        
+    </div>
+        <!--div id="expertise">
+            <div class="left" style="">
+                <div class="">
+                    <h1>Technical expertise</h1>
+                    <span>MyLib specialists use up-to-date technologies and latest industry trends to deliver technically complex and yet easy-to-use solutions with the optimal cost/performance ratio.
+                        Our expert team has taken part in dozens of application development projects. </span>
+                </div>
+            </div>
+            <div class="right">
+
+            </div>
+            <div class="clear"></div>
+        </div-->
+        <!-- END: TECH EXP -->
+    <div class="center">
+        <!-- TESTIMONIALS -->
+        <div id="testimonials">
+            <div class="left" style="width: 60%">
+                <div class="">
+                    <h1>Testimonials</h1>
+                    <span>Mylib studio is truly committed to the clients we serve. We take great pride in our work and treat each of our projects as our very own. We would like you to know that we are dependable, you can rely on us. Our customers are ready to attest to that. </span>
+                </div>
+            </div>
+            <div class="right">
+
+            </div>
+            <div class="clear"></div>
+
+            <div class="clear sub space"></div>
+
+            <div id="testimonials_slides">
+            <div class="testimonials_content block">
+                
+
+                <div class="left">
+                    <div class="author scrollable">
+                        <img src="./src/img/nophoto.png" align="left" />
+                        <h4 style="padding: 30px 0 0 0;">George Zvirid</h4>
+                        <span>CEO / Saga Software</span>
+                    </div>
+                </div>
+                <div class="right">"Roman did an excellent job in all his responsibilities and was an invaluable asset to our organization during his employment with Saga Software. I didn’t hesitate to promote him when the time came. He is very competent in software development as well as in financial and business analysis."
+                    <p><a href="#">See projects</a></p>
+                </div>
+                <div class="clear sub space"></div>
+            </div>
+            <div class="testimonials_content block">
+            
+                <div class="left">
+                    <div class="author scrollable">
+                        <img src="./src/img/nophoto.png" align="left" />
+                        <h4 style="padding: 30px 0 0 0;">Cesar Gonzales</h4>
+                        <span>CEO / Handelot</span>
+                    </div>
+                </div>
+                <div class="right">"Roman’s capabilities and attitude are truly amazing gifts that will be enjoyed by his future clients. His technical lead knowledge and capability to design and bring to life a robust, innovative, and highly complex solutions in a timely manner are unique skills really few people possess in our industry. Roman is a one-stop-solution guru who can create a full architecture by himself. Also, equally impressive was Roman’s dedication, professionalism and commitment to the work on projects where he was involved. Both qualities are rare to find, especially all in one person."
+                    <p><a href="#">See projects</a></p>
+                </div>
+                <div class="clear sub space"></div>
+            </div>
+            <div class="testimonials_content block">
+            
+                <div class="left">
+                    <div class="author scrollable">
+                        <img src="./src/img/nophoto.png" align="left" />
+                        <h4 style="padding: 30px 0 0 0;">Melissa Shu</h4>
+                        <span>VP of Financial Planning Analysis / NBCUniversal</span>
+                    </div>
+                </div>
+                <div class="right">"Andrei has provided the greatest value through process automation of our manual processes and is always looking for ways to automate more, make us more efficient, and do things better from ground up. He has improved a lot of things for us. He's very committed and always willing to take on more."
+                    <p><a href="#">See projects</a></p>
+                </div>
+                <div class="clear sub space"></div>
+            </div>
+
+            <div class="testimonials_content block">
+            
+                <div class="left">
+                    <div class="author scrollable">
+                        <img src="./src/img/nophoto.png" align="left" />
+                        <h4 style="padding: 30px 0 0 0;">Karen Sturges</h4>
+                        <span>SVP & CFO / NBCUniversal</span>
+                    </div>
+                </div>
+                <div class="right">"Andrei is amazing and has great skills at what he does. He has provided the greatest value in the consolidation and report automation processes. He is very friendly and positive and acts just like an internal member of our team."
+                    <p><a href="#">See projects</a></p>
+                </div>
+                <div class="clear sub space"></div>
+            </div>
+
+            <div class="testimonials_content block">
+            
+                <div class="left">
+                    <div class="author scrollable">
+                        <img src="./src/img/nophoto.png" align="left" />
+                        <h4 style="padding: 30px 0 0 0;">Melissa Shu</h4>
+                        <span>Executive Director / Warner Bros. Entertainment</span>
+                    </div>
+                </div>
+                <div class="right">"Andrei has provided the greatest value through his thoroughness, detailed focus, and data management. He established a new process and a data management system that didn’t previously exist. These skills are why I lean on him so much."
+                    <p><a href="#">See projects</a></p>
+                </div>
+                <div class="clear sub space"></div>
+            </div>
+
+            <div class="testimonials_content block">
+            
+                <div class="left">
+                    <div class="author scrollable">
+                        <img src="./src/img/nophoto.png" align="left" />
+                        <h4 style="padding: 30px 0 0 0;">Reuben Sanchez</h4>
+                        <span>VP of Finance / Live Nation</span>
+                    </div>
+                </div>
+                <div class="right">"Andrei is the Marc Chagall of financial modeling and automation. In spite of the late hours and the difficult task of figuring everything out, he did a great job. He showed a high level of commitment and a great attitude. He's a smart guy and was a great asset to us. He was very contemplative to help us work smarter by questioning how we could do things better. He also has great interpersonal skills. I would hire him back for another project without a doubt."
+                    <p><a href="#">See projects</a></p>
+                </div>
+                <div class="clear sub space"></div>
+            </div>
+
+            <div class="testimonials_content block">
+            
+                <div class="left">
+                    <div class="author scrollable">
+                        <img src="./src/img/nophoto.png" align="left" />
+                        <h4 style="padding: 30px 0 0 0;">Robert Gustafson</h4>
+                        <span>Producer / CBS</span>
+                    </div>
+                </div>
+                <div class="right">"Andrei was very engaged and committed to our project. He was upfront about anything that wasn’t clear. Andrei delivered early on our project and we loved it."
+                    <p><a href="#">See projects</a></p>
+                </div>
+                <div class="clear sub space"></div>
+            </div>
+
+            <div class="testimonials_content block">
+            
+                <div class="left">
+                    <div class="author scrollable">
+                        <img src="./src/img/nophoto.png" align="left" />
+                        <h4 style="padding: 30px 0 0 0;">Brian Wright</h4>
+                        <span>Founder and President / Max Edwards Company</span>
+                    </div>
+                </div>
+                <div class="right">"Andrei quickly acclimated himself and became a trusted resource. He made certain assumptions that guided us down the right path. He did a great job interpreting and framing the information to provide us guidance and deliver it effectively. Andrei made some recommendations to our strategic model and enhanced it. He posed some good questions which helped us think of our business a little differently. Andrei provided the greatest value through his strong technical financial skills. Our experience with him was phenomenal."
+                    <p><a href="#">See projects</a></p>
+                </div>
+                <div class="clear sub space"></div>
+            </div>
+
+            <div class="testimonials_content block">
+            
+                <div class="left">
+                    <div class="author scrollable">
+                        <img src="./src/img/nophoto.png" align="left" />
+                        <h4 style="padding: 30px 0 0 0;">Michelle Fortich</h4>
+                        <span>Director of Financial Planning & Analysis / Legalzoom</span>
+                    </div>
+                </div>
+                <div class="right">"Andrei was a key team member and was always dedicated in ensuring we completed project deadlines on time with our forecast, annual plan, and reporting. He puts in the extra time and effort to ensure he meets our needs.
+                Andrei is very flexible, adaptable, thorough, and thoughtful, He has provided the greatest value through his consistency and reliability. He stayed late and worked on ad-hoc projects quite often. Andrei worked with a lot of detail via spreadsheets and mass amounts of data. He made quick independent decisions and would always bubble things up when he is not sure so that he stays on point with us. I feel very comfortable with having him figure things out. He is a quick learner and makes quick independent decisions. Andrei managed our program management application and required very little training. He did really well navigating between the detail and summary views and was concise about things. He identified things for us that were inefficient and improved several of our models. Overall, Andrei was very pleasant to work with, worked well with others, and was a very sound asset to our team."
+                    <p><a href="#">See projects</a></p>
+                </div>
+                <div class="clear sub space"></div>
+            </div>
+
+            <div class="testimonials_content block">
+            
+                <div class="left">
+                    <div class="author scrollable">
+                        <img src="./src/img/nophoto.png" align="left" />
+                        <h4 style="padding: 30px 0 0 0;">Brent Hirokawa</h4>
+                        <span>VP of Finance / Sony Pictures</span>
+                    </div>
+                </div>
+                <div class="right">"Andrei always had a positive attitude. He looked for ways to do things better. He provided the greatest value by the fact that he hit the ground running. He came in during crunch time and did a great job."
+                    <p><a href="#">See projects</a></p>
+                </div>
+                <div class="clear sub space"></div>
+            </div>
+
+            <div class="testimonials_content block">
+            
+                <div class="left">
+                    <div class="author scrollable">
+                        <img src="./src/img/nophoto.png" align="left" />
+                        <h4 style="padding: 30px 0 0 0;">Dennis Monterrosa</h4>
+                        <span>Director of Financial Reporting / Warner Bros. Entertainment</span>
+                    </div>
+                </div>
+                <div class="right">"Andrei was brought in to fill in many challenging roles, and with very little training, he was able to understand our inefficiencies and he built new models and reports. He was top notch in this area. Everyone liked him, and he was very adaptable, personable, and easy to work with."
+                    <p><a href="#">See projects</a></p>
+                </div>
+                <div class="clear sub space"></div>
+            </div>
+
+            <div class="testimonials_content block">
+            
+                <div class="left">
+                    <div class="author scrollable">
+                        <img src="./src/img/nophoto.png" align="left" />
+                        <h4 style="padding: 30px 0 0 0;">Neil Evans</h4>
+                        <span>Senior Director / AECOM</span>
+                    </div>
+                </div>
+                <div class="right">"Andrei’s greatest value was in making a lot of improvements in our processes and by creating several automated models which took several days off our monthly close cycle. He knew what was needed to be done without much training and was proactive. Andrei has excellent customer focus and great attitude. He never complained about the workload or having to stay very late to get the work done in a short amount of time."
+                    <p><a href="#">See projects</a></p>
+                </div>
+                <div class="clear sub space"></div>
+            </div>
+
+            <div class="testimonials_content block">
+            
+                <div class="left">
+                    <div class="author scrollable">
+                        <img src="./src/img/nophoto.png" align="left" />
+                        <h4 style="padding: 30px 0 0 0;">Marie-Laure Goepfer</h4>
+                        <span>Director / Walt Disney Company</span>
+                    </div>
+                </div>
+                <div class="right">"Andrei provided the greatest value in his financial modeling skills and data management. This helped us manage our very complex IT chargeback and allocation cost models. He dug into the information and details well. Overall, Andrei is very dedicated, cares about his client satisfaction, has good judgment, and is very smart."
+                    <p><a href="#">See projects</a></p>
+                </div>
+                <div class="clear sub space"></div>
+            </div>
+
+            <div class="testimonials_content block">
+            
+                <div class="left">
+                    <div class="author scrollable">
+                        <img src="./src/img/nophoto.png" align="left" />
+                        <h4 style="padding: 30px 0 0 0;">Meredith Graham</h4>
+                        <span>Client Service Director / DLC</span>
+                    </div>
+                </div>
+                <div class="right">"Andrei is a joy to work with across the entire project life cycle. He is independent and thoughtful about everything and stands out for his focus on client service and understanding client needs. He is fantastic at forming and deepening client relationships."
+                    <p><a href="#">See projects</a></p>
+                </div>
+                <div class="clear sub space"></div>
+            </div>
+
+            <div class="testimonials_content block">
+            
+                <div class="left">
+                    <div class="author scrollable">
+                        <img src="./src/img/nophoto.png" align="left" />
+                        <h4 style="padding: 30px 0 0 0;">Patrick Coggins</h4>
+                        <span>Client Service Director / DLC</span>
+                    </div>
+                </div>
+                <div class="right">"Andrei has great finance skills, has a great attitude, works very independently, and is a multi-talented consultant. Clients love him."
+                    <p><a href="#">See projects</a></p>
+                </div>
+                <div class="clear sub space"></div>
+            </div>
+
+            <div class="testimonials_content block">
+                
+
+                <div class="left">
+                    <div class="author scrollable">
+                        <img src="./src/img/nophoto.png" align="left" />
+                        <h4 style="padding: 30px 0 0 0;">Andrew Peresko</h4>
+                        <span>CEO / JetSetMobileSoft</span>
+                    </div>
+                </div>
+                <div class="right">"Aliaksandr and his team implemented set of mobile applications for me that helped me speed up my business. I faced with high level of professionalism. They made a great job with demonstration deep and relaible knowledge in the field. I was really suprised by the team attitude into my work."
+                    <p><a href="#">See projects</a></p>
+                </div>
+                <div class="clear sub"></div>
+            </div>
+        </div>
+            <div class="clear sub space"></div>
+            </div>
+        </div>
+        <!-- END: TESTIMONIALS -->
+
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="center">
+            <div class="contact_border"></div>
+            <h2 class="contact_header">Start your<br> project with us!</h2>
+
+            <!-- CONTACT US-->
+            <div id="contact_confirm" class="contact_confirm">
+                <h1>Message was send successfully</h1>
+                <p>We will reach you soon! <a href="#" onclick="return toggleForm();">Contact us again</a></p>
+
+            </div>
+            <form id="contact_form" class="contact_form">
+
+                <div class="table-flex">
+                    <div>
+                        <input id="name" name="name" placeholder="Your Name" />
+                    </div>
+                    <div>
+                        <input id="phone" name="phone" placeholder="Phone Number" />
+                    </div>
+                    <div>
+                        <input id="email" name="email" placeholder="Email" />
+                    </div>
+                    <div>
+                        <input id="company" name="company" placeholder="Company Name" />
+                    </div>
+                </div>
+
+                <a class="primary" href="mailto:info@mylibsystems.com?subject=Project%20Inquiry">Get in touch</a>
+                <!--button type="button" class="primary" onclick="return sendEmail('contact_form')">Get in touch</button-->
+            </form>
+            <!-- END: CONTACT US-->
+
+            <!-- LINKS -->
+            <div class="contact_info">
+                <div class="right">
+                    Contacts<br> <a href="mailto:info@mylibsystems.com">info@mylibsystems.com</a>
+                    <br><a href="tel:+18884402935">1.888.440.2935</a><br> 12021 Rock Creek Ct, Hawthorne, CA, 90250
+                </div>
+                <div class="left">
+                    <div class="social">
+                        <a href="https://www.linkedin.com/company/mylibsystems">LinkedIn</a>
+                        <a href="https://www.facebook.com/mylibsystems">Facebook</a>
+                        <a href="#portfolio">Instagram</a>
+                        <a href="#about">Twitter</a>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <!-- END: LINKS-->
+        </div>
+    </footer>
+    <!-- END: FOOTER -->
+
+    <script>
+        (function () {
+            var slideIndex = 0;
+            var slides = document.querySelectorAll('#testimonials_slides .testimonials_content');
+
+            function rotateSlides() {
+                if (!slides.length) {
+                    return;
+                }
+
+                for (var i = 0; i < slides.length; i += 1) {
+                    slides[i].style.display = 'none';
+                }
+
+                slides[slideIndex].style.display = 'block';
+                slideIndex = (slideIndex + 1) % slides.length;
+            }
+
+            rotateSlides();
+            setInterval(rotateSlides, 7000);
+        })();
+
+        scroll();
+        window.onscroll = function () {
+            scrollFunction('myTopnav');
+        };
+
+        var title = document.getElementById('title');
+        var title1 = document.getElementById('title1');
+        var title2 = document.getElementById('title2');
+
+        if (title && title1 && title2) {
+            title.classList.add('titleAnim');
+            title1.classList.add('title1Anim');
+            title2.classList.add('title2Anim');
+        }
+    </script>
 </body>
+
 </html>

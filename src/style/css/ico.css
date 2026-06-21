@@ -1,0 +1,245 @@
+a[data-icon] {
+    text-align: center;
+    display: block;
+    content: '';
+    font-size: 0;
+    line-height: 0;
+}
+
+[data-icon]:before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+
+}
+
+[data-icon="java"].hover:hover::before,
+[data-icon="java"]:before {
+    background-image: url('../../img/java.png');
+}
+[data-icon="aws"].hover:hover::before,
+[data-icon="aws"]:before {
+    background-image: url('../../img/aws.png');
+}
+[data-icon="kafka"].hover:hover::before,
+[data-icon="kafka"]:before {
+    background-image: url('../../img/kafka.png');
+}
+[data-icon="wiremock"].hover:hover::before,
+[data-icon="wiremock"]:before {
+    background-image: url('../../img/wiremock.png');
+}
+[data-icon="scala"].hover:hover::before,
+[data-icon="scala"]:before {
+    background-image: url('../../img/scala.png');
+}
+[data-icon="js"].hover:hover::before,
+[data-icon="js"]:before {
+    background-image: url('../../img/js.png');
+}
+[data-icon="es"].hover:hover::before,
+[data-icon="es"]:before {
+    background-image: url('../../img/es.png');
+}
+[data-icon="docker"].hover:hover::before,
+[data-icon="docker"]:before {
+    background-image: url('../../img/docker.png');
+}
+[data-icon="cocos2dx"].hover:hover::before,
+[data-icon="cocos2dx"]:before {
+    background-image: url('../../img/cocos2dx.png');
+}
+[data-icon="unity"].hover:hover::before,
+[data-icon="unity"]:before {
+    background-image: url('../../img/unity.png');
+}
+[data-icon="admob"].hover:hover::before,
+[data-icon="admob"]:before {
+    background-image: url('../../img/admob.png');
+}
+[data-icon="graphql"].hover:hover::before,
+[data-icon="graphql"]:before {
+    background-image: url('../../img/graphql.png');
+}
+[data-icon="dynamodb"].hover:hover::before,
+[data-icon="dynamodb"]:before {
+    background-image: url('../../img/dynamodb.png');
+}
+[data-icon="kinesis"].hover:hover::before,
+[data-icon="kinesis"]:before {
+    background-image: url('../../img/kinesis.png');
+}
+[data-icon="jenkins"].hover:hover::before,
+[data-icon="jenkins"]:before {
+    background-image: url('../../img/jenkins.png');
+}
+[data-icon="gitlab"].hover:hover::before,
+[data-icon="gitlab"]:before {
+    background-image: url('../../img/gitlab.png');
+}
+[data-icon="springboot"].hover:hover::before,
+[data-icon="springboot"]:before {
+    background-image: url('../../img/springboot.png');
+}
+[data-icon="android"].hover:hover::before,
+[data-icon="android"]:before {
+    background-image: url('../../img/android.png');
+}
+[data-icon="ios"].hover:hover::before,
+[data-icon="ios"]:before {
+    background-image: url('../../img/ios.png');
+}
+[data-icon="hibernate"].hover:hover::before,
+[data-icon="hibernate"]:before {
+    background-image: url('../../img/hibernate.png');
+}
+[data-icon="jasperreports"].hover:hover::before,
+[data-icon="jasperreports"]:before {
+    background-image: url('../../img/jasperreports.png');
+}
+[data-icon="spring"].hover:hover::before,
+[data-icon="spring"]:before {
+    background-image: url('../../img/spring.png');
+}
+[data-icon="google"].hover:hover::before,
+[data-icon="google"]:before {
+    background-image: url('../../img/google.png');
+}
+[data-icon="mockito"].hover:hover::before,
+[data-icon="mockito"]:before {
+    background-image: url('../../img/mockito.png');
+}
+[data-icon="springdata"].hover:hover::before,
+[data-icon="springdata"]:before {
+    background-image: url('../../img/springdata.png');
+}
+[data-icon="git"].hover:hover::before,
+[data-icon="git"]:before {
+    background-image: url('../../img/git.png');
+}
+[data-icon="html"].hover:hover::before,
+[data-icon="html"]:before {
+    background-image: url('../../img/html.png');
+}
+[data-icon="css"].hover:hover::before,
+[data-icon="css"]:before {
+    background-image: url('../../img/css.png');
+}
+
+/**HOVER**/
+[data-icon="java"].hover::before,
+[data-icon="java"]:hover::before {
+    background-image: url('../../img/java-hover.png');
+}
+[data-icon="aws"].hover::before,
+[data-icon="aws"]:hover::before {
+    background-image: url('../../img/aws-hover.png');
+}
+[data-icon="kafka"].hover::before,
+[data-icon="kafka"]:hover::before {
+    background-image: url('../../img/kafka-hover.png');
+}
+[data-icon="wiremock"].hover::before,
+[data-icon="wiremock"]:hover::before {
+    background-image: url('../../img/wiremock-hover.png');
+}
+[data-icon="scala"].hover::before,
+[data-icon="scala"]:hover::before {
+    background-image: url('../../img/scala-hover.png');
+}
+[data-icon="js"].hover::before,
+[data-icon="js"]:hover::before {
+    background-image: url('../../img/js-hover.png');
+}
+[data-icon="es"].hover::before,
+[data-icon="es"]:hover::before {
+    background-image: url('../../img/es-hover.png');
+}
+[data-icon="docker"].hover::before,
+[data-icon="docker"]:hover::before {
+    background-image: url('../../img/docker-hover.png');
+}
+[data-icon="cocos2dx"].hover::before,
+[data-icon="cocos2dx"]:hover::before {
+    background-image: url('../../img/cocos2dx-hover.png');
+}
+[data-icon="unity"].hover::before,
+[data-icon="unity"]:hover::before {
+    background-image: url('../../img/unity-hover.png');
+}
+[data-icon="admob"].hover::before,
+[data-icon="admob"]:hover::before {
+    background-image: url('../../img/admob-hover.png');
+}
+[data-icon="graphql"].hover::before,
+[data-icon="graphql"]:hover::before {
+    background-image: url('../../img/graphql-hover.png');
+}
+[data-icon="dynamodb"].hover::before,
+[data-icon="dynamodb"]:hover::before {
+    background-image: url('../../img/dynamodb-hover.png');
+}
+[data-icon="kinesis"].hover::before,
+[data-icon="kinesis"]:hover::before {
+    background-image: url('../../img/kinesis-hover.png');
+}
+[data-icon="jenkins"].hover::before,
+[data-icon="jenkins"]:hover::before {
+    background-image: url('../../img/jenkins-hover.png');
+}
+[data-icon="gitlab"].hover::before,
+[data-icon="gitlab"]:hover::before {
+    background-image: url('../../img/gitlab-hover.png');
+}
+[data-icon="springboot"].hover::before,
+[data-icon="springboot"]:hover::before {
+    background-image: url('../../img/springboot-hover.png');
+}
+[data-icon="android"].hover::before,
+[data-icon="android"]:hover::before {
+    background-image: url('../../img/android-hover.png');
+}
+[data-icon="ios"].hover::before,
+[data-icon="ios"]:hover::before {
+    background-image: url('../../img/ios-hover.png');
+}
+[data-icon="hibernate"].hover::before,
+[data-icon="hibernate"]:hover::before {
+    background-image: url('../../img/hibernate-hover.png');
+}
+[data-icon="jasperreports"].hover::before,
+[data-icon="jasperreports"]:hover::before {
+    background-image: url('../../img/jasperreports-hover.png');
+}
+[data-icon="spring"].hover::before,
+[data-icon="spring"]:hover::before {
+    background-image: url('../../img/spring-hover.png');
+}
+[data-icon="google"].hover::before,
+[data-icon="google"]:hover::before {
+    background-image: url('../../img/google-hover.png');
+}
+[data-icon="mockito"].hover::before,
+[data-icon="mockito"]:hover::before {
+    background-image: url('../../img/mockito-hover.png');
+}
+[data-icon="springdata"].hover::before,
+[data-icon="springdata"]:hover::before {
+    background-image: url('../../img/springdata-hover.png');
+}
+[data-icon="git"].hover::before,
+[data-icon="git"]:hover::before {
+    background-image: url('../../img/git-hover.png');
+}
+[data-icon="html"].hover::before,
+[data-icon="html"]:hover::before {
+    background-image: url('../../img/html-hover.png');
+}
+[data-icon="css"].hover::before,
+[data-icon="css"]:hover::before {
+    background-image: url('../../img/css-hover.png');
+}

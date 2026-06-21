@@ -1,0 +1,214 @@
+<html>
+
+<head>
+    <title>MyLib Systems LLC / Software Development Company</title>
+    <!--TODO: remove. Used for icons -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1">
+
+
+    <script src="../src/js/slider.js"></script>
+    <script src="../src/js/burger.js"></script>
+    <script src="../src/js/header.js"></script>
+    <script src="../src/js/accordion.js"></script>
+
+    <link rel="stylesheet" href="../src/style/css/font-SpaceGrotesk.css">
+    <link rel="stylesheet" href="../src/style/css/font.css">
+    <link rel="stylesheet" href="../src/style/css/main.css">
+    <link rel="stylesheet" href="../src/style/css/theme-white.css">
+    <link rel="stylesheet" href="../src/style/css/project.css">
+
+    <link rel="shortcut icon" type="image/png" href="../src/img/favico.png" />
+
+</head>
+
+<body>
+
+   
+
+    <!-- TOP NAVIGATION -->
+    <nav class="topnav white-header" id="myTopnav">
+        <div class="center">
+            <div class="logo">Mylib<span>Systems</span></div>
+            <div>
+                <a href="javascript:void(0);" class="icon" onclick="burger()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="../index.html" onclick="burger()">Home</a>
+                <a href="../index.html#services" onclick="burger()">Services</a>
+                <a href="../index.html#portfolio" onclick="burger()">Porfolio</a>
+                <a href="../index.html#about" onclick="burger()">About us</a>
+                <a href="../index.html#contact" class="primary" onclick="burger()">Contact us</a>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </nav>
+    <!-- END: TOP NAVIGATION -->
+
+    <!-- HEADER -->
+    <header id="project" class="center">
+        
+        <div style="text-align: center;width: 100%;padding: 100px 0 0 0">
+            <h1>Ticketing Platform </br>as a Service</h1>
+            <p>Platform provides services to discover and purchase tickets for various entertainment events such as musical, theater, sport and many others</p>
+            <div class="image">
+                    <ul class="tags">
+                            <li><a href="#">B2B</a></li>
+                            <li><a href="#">AWS</a></li>
+                            <li><a href="#">KAFKA</a></li>
+                        </ul>
+                <img src="../src/img/proj1.png"/>
+            </div>
+
+            <div class="table-flex stats">
+                <div>
+                    <h1>5</h1>
+                    <h3>Backend</br>Engineers</h3>
+                </div>
+                <div>
+                    <h1>1</h1>
+                    <h3>Project</br>Manager</h3>
+                </div>
+                <div>
+                    <h1>1</h1>
+                    <h3>Years of</br>collaboration</h3>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- END: HEADER -->
+
+    <div class="center">
+
+        <!-- SERVICES -->
+        <div id="services" class="block">
+            <div class="left">
+                <div class="scrollable">
+                    <h1>Ticketing Platform </br>as a Service</h1>
+                    <span>B2B, ENTERPRISE, AWS, JAVA, JAVASCRIPT, SCALA, KAFKA, JETTY, DOCKER, ELASTICSEARCH, KIBANA, WIREMOCK </span>
+                </div>
+            </div>
+            <div class="right">
+                <div class="clear sub"></div>
+                <div class="left sub">
+                    <h3><a href="javascript:void(0);" onclick="expand(this, 'uxdesign')">Description</a></h3>
+                </div>
+                <div class="right" id="uxdesign">The Ticketing Platform provides services to reserve and purchase tickets for Ticketmaster and his partners. The platform is a backend public API based on AppSync/GraphQL, REST and WebSockets. The main target of the system is replace legacy technology (such as TAP) with modern solutions and managed infrastructure by Amazon AWS. The whole back-end system is deployed as AppSync instances. The Ticketing Platform frontend dedicated service that supports the primary checkout functions: load checkout delivery options, load checkout payment payment options, reserve Inventory, purchase.</div>
+                <div class="clear sub"></div>
+
+               
+                <div class="left sub">
+                    <h3><a href="javascript:void(0);" onclick="expand(this, 'consulting')">Project key features</a></h3>
+                </div>
+                <div class="right" id="consulting">
+                    Supports various payment methods <br/>
+
+Edit, Delete and Store cards <br/>
+
+Autofill, inline validation <br/>
+
+Ticket insurance with third party services<br/> 
+
+Order Summary & Fee Display <br/>
+
+Reserve collisions <br/>
+
+Confirmation page <br/>
+
+Tracking/GA <br/>
+
+Purchase Path Automation <br/>
+
+Business & Tech Dashboards <br/>
+
+Metrics Dashboards <br/>
+
+Inline Error Messaging <br/>
+
+View From Section 
+<br/>
+Loyalty (Audience Rewards) <br/>
+
+MiniMap In Checkout <br/>
+
+Upsells - Parking <br/>
+
+NFB <br/>
+
+Park Whiz <br/>
+                </div>
+                <div class="clear sub"></div>
+
+
+                <div class="left sub">
+                    <h3><a href="javascript:void(0);" onclick="expand(this, 'uxdesign')">Technologies</a></h3>
+                </div>
+                <div class="right" id="uxdesign">Amazon AWS, Amazon SDK, Java, JavaScript, HTML, Scala, Gatling, JUnit, RestAssered, GraphQL, Gradle, Maven Git, GitLab API, FasterXML, JSON, Slf4j, Mockito, Jetty, Logstash, Fluentd, Elasticsearch, DynamoDB, Kinesis, AppSync, Kafka, ApiGateway, Kibana, Wiremock. </div>
+                <div class="clear sub"></div>
+        
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- END: SERVICES -->
+        tags: B2B, ENTERPRISE, AWS, JAVA, JAVASCRIPT, SCALA, KAFKA, JETTY, DOCKER, ELASTICSEARCH, KIBANA, WIREMOCK 
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="center">
+            <div class="contact_border"></div>
+            <h2 class="contact_header">Start your<br> project with us!</h2>
+
+            <!-- CONTACT US-->
+            <form id="contact_form" class="contact_form">
+                <div class="table-flex">
+                    <div>
+                        <input id="name" name="name" placeholder="Your Name" />
+                    </div>
+                    <div>
+                        <input id="phone" name="phone" placeholder="Phone Number" />
+                    </div>
+                    <div>
+                        <input id="email" name="email" placeholder="Email" />
+                    </div>
+                    <div>
+                        <input id="company" name="company" placeholder="Company Name" />
+                    </div>
+                </div>
+
+                <a class="primary" href="mailto:info@mylibsystems.com?subject=Project%20Inquiry">Get in touch</a>
+            </form>
+            <!-- END: CONTACT US-->
+
+            <!-- LINKS -->
+            <div class="contact_info">
+                <div class="right">
+                    Contacts<br> <a href="mailto:info@mylibsystems.com">info@mylibsystems.com</a>
+                    <br><a href="tel:+18884402935">1.888.440.2935</a><br> 12021 Rock Creek Ct, Hawthorne, CA, 90250
+                </div>
+                <div class="left">
+                    <div class="social">
+                        <a href="https://www.linkedin.com/company/mylibsystems">LinkedIn</a>
+                        <a href="https://www.facebook.com/mylibsystems">Facebook</a>
+                        <a href="#portfolio">Instagram</a>
+                        <a href="#about">Twitter</a>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <!-- END: LINKS-->
+        </div>
+    </footer>
+    <!-- END: FOOTER -->
+
+    <script>
+        scroll();
+       // window.onscroll = function() {
+       //     scrollFunction('myTopnav')
+       // };
+    </script>
+</body>
+
+</html>
