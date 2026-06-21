@@ -1,3 +1,9 @@
+## v0.9.20 (2026-06-21)
+
+### Fix
+
+- unify desktop section gaps
+
 ## v0.9.19 (2026-06-21)
 
 ### Fix
