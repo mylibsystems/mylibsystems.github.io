@@ -1,3 +1,9 @@
+## v0.9.15 (2026-06-21)
+
+### Fix
+
+- increase desktop hero text spacing
+
 ## v0.9.14 (2026-06-21)
 
 ### Fix
