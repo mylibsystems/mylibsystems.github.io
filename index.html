@@ -142,7 +142,7 @@
       gap: clamp(24px, 3.4vh, 42px);
       overflow: hidden;
       position: relative;
-      min-height: clamp(520px, calc(100vh - 120px), 860px);
+      min-height: calc(100vh - 120px);
       isolation: isolate;
     }
 
@@ -647,14 +647,22 @@
         });
       }
 
+      function getViewportHeight() {
+        if (window.visualViewport && typeof window.visualViewport.height === "number") {
+          return Math.max(0, Math.round(window.visualViewport.height));
+        }
+
+        return Math.max(0, Math.round(window.innerHeight || document.documentElement.clientHeight || 0));
+      }
+
       function updateHeroHeight() {
         if (!hero) return;
         var heroTop = hero.getBoundingClientRect().top;
         var reserved = Math.max(0, Math.round(heroTop) + 12);
-        var viewportHeight = Math.max(0, window.innerHeight || document.documentElement.clientHeight || 0);
+        var viewportHeight = getViewportHeight();
         var computedHeight = viewportHeight - reserved;
         var minHero = window.matchMedia("(max-width: 700px)").matches ? 420 : 520;
-        var maxHero = window.matchMedia("(max-width: 700px)").matches ? 680 : 860;
+        var maxHero = window.matchMedia("(max-width: 700px)").matches ? 680 : Number.POSITIVE_INFINITY;
         var safeHeight = Math.max(minHero, Math.min(maxHero, computedHeight));
         hero.style.minHeight = safeHeight + "px";
       }
@@ -689,8 +697,12 @@
 
       applyLayout(initial, false);
       updateHeroHeight();
+      window.addEventListener("load", updateHeroHeight);
       window.addEventListener("resize", updateHeroHeight);
       window.addEventListener("orientationchange", updateHeroHeight);
+      if (window.visualViewport) {
+        window.visualViewport.addEventListener("resize", updateHeroHeight);
+      }
     })();
   </script>
 </body>
