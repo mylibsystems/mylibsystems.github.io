@@ -1,3 +1,9 @@
+## v0.9.19 (2026-06-21)
+
+### Fix
+
+- keep founder below viewport after hero label expansion
+
 ## v0.9.18 (2026-06-21)
 
 ### Fix
