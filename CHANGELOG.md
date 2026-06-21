@@ -1,3 +1,9 @@
+## v0.9.4 (2026-06-21)
+
+### Fix
+
+- enforce exact center position for mobile circuit overlay
+
 ## v0.9.3 (2026-06-21)
 
 ### Fix
