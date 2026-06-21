@@ -1,14 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 281 610" role="img" aria-label="Circuit artwork" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <clipPath id="clip-left" clipPathUnits="userSpaceOnUse">
-      <rect x="0" y="0" width="90" height="610" />
-    </clipPath>
-    <clipPath id="clip-center" clipPathUnits="userSpaceOnUse">
-      <rect x="90" y="0" width="101" height="610" />
-    </clipPath>
-    <clipPath id="clip-right" clipPathUnits="userSpaceOnUse">
-      <rect x="191" y="0" width="90" height="610" />
-    </clipPath>
 <g id="circuit-base" transform="translate(0.000000,610.000000) scale(0.100000,-0.100000)"
 fill="currentColor" stroke="none">
 <path d="M810 4987 l0 -932 -218 -218 c-176 -176 -222 -217 -244 -217 -21 0
@@ -103,14 +94,6 @@ c-41 41 -73 80 -71 86 6 15 -21 54 -37 54 -7 0 -20 -5 -29 -11z"/>
 </g>
   </defs>
   <g color="#66d5f4">
-    <g clip-path="url(#clip-left)" transform="translate(0,-42) scale(1,1.14)">
-      <use href="#circuit-base" />
-    </g>
-    <g clip-path="url(#clip-center)">
-      <use href="#circuit-base" />
-    </g>
-    <g clip-path="url(#clip-right)" transform="translate(0,-42) scale(1,1.14)">
-      <use href="#circuit-base" />
-    </g>
+    <use href="#circuit-base" />
   </g>
 </svg>
