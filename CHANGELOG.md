@@ -1,3 +1,9 @@
+## v0.8.5 (2026-06-21)
+
+### Fix
+
+- keep hero focus labels single-line
+
 ## v0.8.4 (2026-06-21)
 
 ### Fix
