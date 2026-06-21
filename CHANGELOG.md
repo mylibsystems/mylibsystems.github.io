@@ -1,3 +1,9 @@
+## v0.9.6 (2026-06-21)
+
+### Fix
+
+- add background rect to SVG viewBox for centering check
+
 ## v0.9.5 (2026-06-21)
 
 ### Fix
