@@ -1,3 +1,9 @@
+## v0.9.10 (2026-06-21)
+
+### Fix
+
+- recalc hero height from browser viewport on resize
+
 ## v0.9.9 (2026-06-21)
 
 ### Fix
