@@ -1,3 +1,9 @@
+## v0.9.0 (2026-06-21)
+
+### Feat
+
+- add browser tab icon from logo.svg
+
 ## v0.8.5 (2026-06-21)
 
 ### Fix
