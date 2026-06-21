@@ -1,3 +1,9 @@
+## v0.9.13 (2026-06-21)
+
+### Fix
+
+- make section spacing responsive
+
 ## v0.9.12 (2026-06-21)
 
 ### Fix
