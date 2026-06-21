@@ -1,3 +1,9 @@
+## v0.9.16 (2026-06-21)
+
+### Fix
+
+- increase hero eyebrow spacing
+
 ## v0.9.15 (2026-06-21)
 
 ### Fix
