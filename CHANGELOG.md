@@ -1,3 +1,9 @@
+## v0.9.8 (2026-06-21)
+
+### Fix
+
+- center circuit paths horizontally within viewBox
+
 ## v0.9.7 (2026-06-21)
 
 ### Fix
