@@ -1,3 +1,9 @@
+## v0.8.2 (2026-06-21)
+
+### Fix
+
+- restore circuit vector to original traced geometry
+
 ## v0.8.1 (2026-06-21)
 
 ### Fix
