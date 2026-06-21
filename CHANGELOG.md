@@ -1,3 +1,9 @@
+## v0.9.7 (2026-06-21)
+
+### Fix
+
+- use bright red background for SVG viewBox visibility
+
 ## v0.9.6 (2026-06-21)
 
 ### Fix
